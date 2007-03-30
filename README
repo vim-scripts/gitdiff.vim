@@ -1,0 +1,19 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1846
+
+This script provides two functions to display git diffs in vim.
+
+:GITDiff [commitish]
+
+    Split the vim window vertically, display the HEAD, or some other changeset, version of the file in the split, then diff them.
+
+:GITChanges [commitish]
+
+    Highlight lines that were changed since the HEAD or some other changeset.
+
+Some examples:
+
+:GITDiff HEAD~10
+:diffoff
+
+:GITChanges origin/master
+:syntax on
